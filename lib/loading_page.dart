@@ -24,7 +24,7 @@ class Iphone13145 extends StatelessWidget {
     return Column(
       children: [
         Container(
-          width: 390,
+          width: 450,
           height: 844,
           padding: const EdgeInsets.only(top: 353, bottom: 310),
           clipBehavior: Clip.antiAlias,

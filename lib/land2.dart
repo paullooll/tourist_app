@@ -25,7 +25,7 @@ class Iphone13148 extends StatelessWidget {
     return Column(
       children: [
         Container(
-          width: 390,
+          width: 450,
           height: 844,
           clipBehavior: Clip.antiAlias,
           decoration: BoxDecoration(color: Colors.black),
@@ -35,7 +35,7 @@ class Iphone13148 extends StatelessWidget {
                 left: 0,
                 top: 0,
                 child: Container(
-                  width: 390,
+                  width: 450,
                   height: 844,
                   decoration: BoxDecoration(
                     image: DecorationImage(
@@ -52,7 +52,7 @@ class Iphone13148 extends StatelessWidget {
                 child: Opacity(
                   opacity: 0.30,
                   child: Container(
-                    width: 390,
+                    width: 450,
                     height: 844,
                     decoration: BoxDecoration(color: Color(0xFF333333)),
                   ),
@@ -78,7 +78,7 @@ class Iphone13148 extends StatelessWidget {
                 ),
               ),
               Positioned(
-                left: 294,
+                left: 366,
                 top: 747,
                 child: Container(
                   width: 65,
@@ -92,7 +92,7 @@ class Iphone13148 extends StatelessWidget {
                 ),
               ),
               Positioned(
-                left: 308,
+                left: 380,
                 top: 759,
                 child: Container(
                   width: 37,

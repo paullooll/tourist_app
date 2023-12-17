@@ -13,7 +13,9 @@ class TouristSpotApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: MyHomePage(),
+      home: ListView(children: [
+          MyHomePage(),
+        ]),
     );
   }
 }
@@ -90,11 +92,12 @@ class _MyHomePageState extends State<MyHomePage> {
               left: 0,
               top: 0,
               child: Container(
-                width: 390,
+                width: 450,
                 height: 844,
                 decoration: BoxDecoration(
                   image: DecorationImage(
-                    image: NetworkImage("https://s3-alpha-sig.figma.com/img/6c76/ec4a/7dd5ce5e94a85f7a57eb57e45a0da502?Expires=1703462400&Signature=VrEaUnhwN7v5C6QGSQQ4iazoadJuthUdgcho0WRtyi5IjgVDCbfpeC6Hfobnxlqq7lUtMgp01WEjfJrcP7xPZO9V8c-X~yajHNDufUjTgWd1vndNRLiJYTPZlCsEBre4OlMynAw1-uhTmrnYOhuX7W1150ZXO-s4dJElZMCw7r1kyu2fEeg~UDgBugSZEZdiG5fxePrthUqFyqbYPCS7LN7ER9A9VhRcmR5I59LJvE5Snd1IYhf0v8C4MzUccidUuW1tcHGlDIdEZze-2et4ei5en3ZRP0MqfU4fSLvbBwpRwpW7SjjIdQewh7zh-WOMLMExGGykv-7aenscBki39w__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"),
+                    image: NetworkImage(
+                        "https://s3-alpha-sig.figma.com/img/6c76/ec4a/7dd5ce5e94a85f7a57eb57e45a0da502?Expires=1703462400&Signature=VrEaUnhwN7v5C6QGSQQ4iazoadJuthUdgcho0WRtyi5IjgVDCbfpeC6Hfobnxlqq7lUtMgp01WEjfJrcP7xPZO9V8c-X~yajHNDufUjTgWd1vndNRLiJYTPZlCsEBre4OlMynAw1-uhTmrnYOhuX7W1150ZXO-s4dJElZMCw7r1kyu2fEeg~UDgBugSZEZdiG5fxePrthUqFyqbYPCS7LN7ER9A9VhRcmR5I59LJvE5Snd1IYhf0v8C4MzUccidUuW1tcHGlDIdEZze-2et4ei5en3ZRP0MqfU4fSLvbBwpRwpW7SjjIdQewh7zh-WOMLMExGGykv-7aenscBki39w__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"),
                     fit: BoxFit.fill,
                   ),
                 ),
@@ -104,7 +107,7 @@ class _MyHomePageState extends State<MyHomePage> {
               left: 0,
               top: 0,
               child: Container(
-                width: 390,
+                width: 450,
                 height: 844,
                 decoration: BoxDecoration(
                   color: Colors.black.withOpacity(0.3499999940395355),
@@ -112,8 +115,8 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
             ),
             Positioned(
-              left: 63,
-              top: 251,
+              left: 100,
+              top: 200,
               child: Container(
                 width: 273.71,
                 height: 465.30,
@@ -123,8 +126,8 @@ class _MyHomePageState extends State<MyHomePage> {
                       left: 0,
                       top: 0,
                       child: Container(
-                        width: 273.71,
-                        height: 465.30,
+                        width: 250,
+                        height: 400,
                         decoration: ShapeDecoration(
                           image: DecorationImage(
                             image: NetworkImage(item['imageurl']),
@@ -136,17 +139,28 @@ class _MyHomePageState extends State<MyHomePage> {
                         ),
                       ),
                     ),
+                    SizedBox(height: 50 ),
                     Positioned(
                       left: 13.69,
                       top: 398.58,
-                      child: Text(
-                        item['name'],
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 29.94,
-                          fontFamily: 'Montserrat',
-                          fontWeight: FontWeight.w600,
-                          height: 0,
+                      child: Container(
+                        constraints: BoxConstraints(
+                          maxWidth: 250.0, 
+                        ),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              item['name'],
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 29.94,
+                                fontFamily: 'Montserrat',
+                                fontWeight: FontWeight.w600,
+                                height: 0,
+                              ),
+                            ),
+                          ],
                         ),
                       ),
                     ),
@@ -155,7 +169,7 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
             ),
             Positioned(
-              left: 110,
+              left: 140,
               top: 32,
               child: Container(
                 width: 170,
@@ -178,7 +192,8 @@ class _MyHomePageState extends State<MyHomePage> {
 class TouristSpotDetails extends StatelessWidget {
   final Map<String, dynamic> spotData;
 
-  const TouristSpotDetails({Key? key, required this.spotData}) : super(key: key);
+  const TouristSpotDetails({Key? key, required this.spotData})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -210,7 +225,7 @@ class Spot extends StatelessWidget {
     return Column(
       children: [
         Container(
-          width: 390,
+          width: 450,
           height: 844,
           clipBehavior: Clip.antiAlias,
           decoration: BoxDecoration(color: Color(0xFF141414)),
@@ -220,7 +235,7 @@ class Spot extends StatelessWidget {
                 left: 0,
                 top: 0,
                 child: Container(
-                  width: 390,
+                  width: 450,
                   height: 519,
                   decoration: ShapeDecoration(
                     image: DecorationImage(
@@ -233,11 +248,11 @@ class Spot extends StatelessWidget {
                   ),
                 ),
               ),
-              Positioned(
+               Positioned(
                 left: 0,
                 top: 447,
                 child: Container(
-                  width: 390,
+                  width: 450,
                   height: 403,
                   decoration: ShapeDecoration(
                     color: Color(0xFF141414),
@@ -265,8 +280,8 @@ class Spot extends StatelessWidget {
                 left: 34,
                 top: 549,
                 child: SizedBox(
-                  width: 318,
-                  height: 220,
+                  width: 400,
+                  height: 500,
                   child: Text(
                     spotData['description'],
                     style: TextStyle(
@@ -283,7 +298,7 @@ class Spot extends StatelessWidget {
                 left: 34,
                 top: 502,
                 child: Text(
-                  spotData['location'],
+                  '${spotData['location']} , ${spotData['address']}',
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 16,
