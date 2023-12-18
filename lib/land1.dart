@@ -39,7 +39,8 @@ class LandingPage1 extends StatelessWidget {
                   height: 800,
                   decoration: BoxDecoration(
                     image: DecorationImage(
-                      image: NetworkImage("https://s3-alpha-sig.figma.com/img/692a/4191/716efad1c9503798644ebce391ae7543?Expires=1703462400&Signature=NOfRO4SkAe~bWk-CeeQv69lnArlI8Rbd0aSsiRnYVpRjvUw~XV5LviLJ43LEog5BPulQP9j2hKlbMMxGtTes-IDVkJbMXbZYWZjWw8AxqNb31KkAZRcif5gFxRqDA-9ddnnXwAlLT3C~F3mh-g56p7Wf8spN0Po5VLyLarXaxbRVoc6qTQO82POamWOtY~WV3mbv4CGJQL6Nxgi0wU88pVgllJdvlreqjZWWOACXjop4enNLHWYlnjZ7~C5MSYBRMuIPLgM-zeFRkXPxtuBnl-y-GLsOrMpNRe5XZpa6oI3-Z3NU0JldqhtJZuLMMeWTRomdMmu9YMApayZiIfqMfg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"),
+                      image: NetworkImage(
+                          "https://s3-alpha-sig.figma.com/img/692a/4191/716efad1c9503798644ebce391ae7543?Expires=1703462400&Signature=NOfRO4SkAe~bWk-CeeQv69lnArlI8Rbd0aSsiRnYVpRjvUw~XV5LviLJ43LEog5BPulQP9j2hKlbMMxGtTes-IDVkJbMXbZYWZjWw8AxqNb31KkAZRcif5gFxRqDA-9ddnnXwAlLT3C~F3mh-g56p7Wf8spN0Po5VLyLarXaxbRVoc6qTQO82POamWOtY~WV3mbv4CGJQL6Nxgi0wU88pVgllJdvlreqjZWWOACXjop4enNLHWYlnjZ7~C5MSYBRMuIPLgM-zeFRkXPxtuBnl-y-GLsOrMpNRe5XZpa6oI3-Z3NU0JldqhtJZuLMMeWTRomdMmu9YMApayZiIfqMfg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"),
                       fit: BoxFit.cover,
                     ),
                   ),
@@ -64,7 +65,7 @@ class LandingPage1 extends StatelessWidget {
                   width: 328,
                   height: 135,
                   child: Text(
-                    'Explore the beauty of the World!',
+                    'Explore the beauty of the Philippines!',
                     style: TextStyle(
                       color: Colors.white,
                       fontSize: 40,
@@ -105,11 +106,15 @@ class LandingPage1 extends StatelessWidget {
                         height: 37,
                         child: IconButton(
                           iconSize: 25,
-                          icon: const Icon(Icons.arrow_forward_ios, color: Colors.black,),
+                          icon: const Icon(
+                            Icons.arrow_forward_ios,
+                            color: Colors.black,
+                          ),
                           onPressed: () {
                             Navigator.pushReplacement(
-                            context,
-                            MaterialPageRoute(builder: (context) => const Land2()),
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => const Land2()),
                             );
                           },
                         ),
