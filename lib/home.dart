@@ -57,7 +57,7 @@ class _MyHomePageState extends State<MyHomePage> {
               items: buildCarouselItems(),
               options: CarouselOptions(
                 height: MediaQuery.of(context).size.height,
-                aspectRatio: 3 / 4,
+                aspectRatio: 9 / 16,
                 enlargeCenterPage: true,
               ),
             )
@@ -92,8 +92,8 @@ class _MyHomePageState extends State<MyHomePage> {
               left: 0,
               top: 0,
               child: Container(
-                width: 450,
-                height: 844,
+                width: 390,
+                height: 800,
                 decoration: BoxDecoration(
                   image: DecorationImage(
                     image: NetworkImage(
@@ -107,15 +107,15 @@ class _MyHomePageState extends State<MyHomePage> {
               left: 0,
               top: 0,
               child: Container(
-                width: 450,
-                height: 844,
+                width: 390,
+                height: 800,
                 decoration: BoxDecoration(
                   color: Colors.black.withOpacity(0.3499999940395355),
                 ),
               ),
             ),
             Positioned(
-              left: 100,
+              left: 70,
               top: 200,
               child: Container(
                 width: 273.71,
@@ -169,7 +169,7 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
             ),
             Positioned(
-              left: 140,
+              left: 110,
               top: 32,
               child: Container(
                 width: 170,
@@ -225,8 +225,8 @@ class Spot extends StatelessWidget {
     return Column(
       children: [
         Container(
-          width: 450,
-          height: 844,
+          width: 390,
+          height: 800,
           clipBehavior: Clip.antiAlias,
           decoration: BoxDecoration(color: Color(0xFF141414)),
           child: Stack(
@@ -235,7 +235,7 @@ class Spot extends StatelessWidget {
                 left: 0,
                 top: 0,
                 child: Container(
-                  width: 450,
+                  width: 390,
                   height: 519,
                   decoration: ShapeDecoration(
                     image: DecorationImage(
@@ -252,7 +252,7 @@ class Spot extends StatelessWidget {
                 left: 0,
                 top: 447,
                 child: Container(
-                  width: 450,
+                  width: 390,
                   height: 403,
                   decoration: ShapeDecoration(
                     color: Color(0xFF141414),
@@ -269,18 +269,19 @@ class Spot extends StatelessWidget {
                   spotData['name'],
                   style: TextStyle(
                     color: Colors.white,
-                    fontSize: 35,
+                    fontSize: 25,
                     fontFamily: 'Montserrat',
                     fontWeight: FontWeight.w600,
                     height: 0,
                   ),
                 ),
               ),
+              SizedBox(width: 100),
               Positioned(
                 left: 34,
                 top: 549,
                 child: SizedBox(
-                  width: 400,
+                  width: 350,
                   height: 500,
                   child: Text(
                     spotData['description'],

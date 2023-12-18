@@ -12,21 +12,21 @@ class Land1 extends StatelessWidget {
       ),
       home: Scaffold(
         body: ListView(children: [
-          Iphone13147(),
+          LandingPage1(),
         ]),
       ),
     );
   }
 }
 
-class Iphone13147 extends StatelessWidget {
+class LandingPage1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
       children: [
         Container(
-          width: 450,
-          height: 844,
+          width: 390,
+          height: 800,
           clipBehavior: Clip.antiAlias,
           decoration: BoxDecoration(color: Colors.black),
           child: Stack(
@@ -35,8 +35,8 @@ class Iphone13147 extends StatelessWidget {
                 left: 0,
                 top: 0,
                 child: Container(
-                  width: 450,
-                  height: 844,
+                  width: 390,
+                  height: 800,
                   decoration: BoxDecoration(
                     image: DecorationImage(
                       image: NetworkImage("https://s3-alpha-sig.figma.com/img/692a/4191/716efad1c9503798644ebce391ae7543?Expires=1703462400&Signature=NOfRO4SkAe~bWk-CeeQv69lnArlI8Rbd0aSsiRnYVpRjvUw~XV5LviLJ43LEog5BPulQP9j2hKlbMMxGtTes-IDVkJbMXbZYWZjWw8AxqNb31KkAZRcif5gFxRqDA-9ddnnXwAlLT3C~F3mh-g56p7Wf8spN0Po5VLyLarXaxbRVoc6qTQO82POamWOtY~WV3mbv4CGJQL6Nxgi0wU88pVgllJdvlreqjZWWOACXjop4enNLHWYlnjZ7~C5MSYBRMuIPLgM-zeFRkXPxtuBnl-y-GLsOrMpNRe5XZpa6oI3-Z3NU0JldqhtJZuLMMeWTRomdMmu9YMApayZiIfqMfg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"),
@@ -59,7 +59,7 @@ class Iphone13147 extends StatelessWidget {
               ),
               Positioned(
                 left: 31,
-                top: 549,
+                top: 500,
                 child: SizedBox(
                   width: 328,
                   height: 135,
@@ -77,8 +77,8 @@ class Iphone13147 extends StatelessWidget {
                 ),
               ),
               Positioned(
-                left: 366,
-                top: 747,
+                left: 289,
+                top: 700,
                 child: Container(
                   width: 65,
                   height: 61,
@@ -91,8 +91,8 @@ class Iphone13147 extends StatelessWidget {
                 ),
               ),
               Positioned(
-                left: 380,
-                top: 759,
+                left: 303,
+                top: 710,
                 child: Container(
                   width: 37,
                   height: 37,

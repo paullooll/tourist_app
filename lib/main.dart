@@ -23,7 +23,7 @@ class _MyAppState extends State<MyApp> {
   }
 
   loadData() async {
-    await Future.delayed(const Duration(seconds: 2));
+    await Future.delayed(const Duration(seconds: 5));
     setState(() {
       isLoading = false;
     });

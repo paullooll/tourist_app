@@ -12,21 +12,21 @@ class Land2 extends StatelessWidget {
       ),
       home: Scaffold(
         body: ListView(children: [
-          Iphone13148(),
+          LandingPage2(),
         ]),
       ),
     );
   }
 }
 
-class Iphone13148 extends StatelessWidget {
+class LandingPage2 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
       children: [
         Container(
-          width: 450,
-          height: 844,
+          width: 390,
+          height: 800,
           clipBehavior: Clip.antiAlias,
           decoration: BoxDecoration(color: Colors.black),
           child: Stack(
@@ -35,8 +35,8 @@ class Iphone13148 extends StatelessWidget {
                 left: 0,
                 top: 0,
                 child: Container(
-                  width: 450,
-                  height: 844,
+                  width: 390,
+                  height: 800,
                   decoration: BoxDecoration(
                     image: DecorationImage(
                       image: NetworkImage(
@@ -53,14 +53,14 @@ class Iphone13148 extends StatelessWidget {
                   opacity: 0.30,
                   child: Container(
                     width: 450,
-                    height: 844,
+                    height: 800,
                     decoration: BoxDecoration(color: Color(0xFF333333)),
                   ),
                 ),
               ),
               Positioned(
                 left: 31,
-                top: 549,
+                top: 500,
                 child: SizedBox(
                   width: 328,
                   height: 135,
@@ -78,8 +78,8 @@ class Iphone13148 extends StatelessWidget {
                 ),
               ),
               Positioned(
-                left: 366,
-                top: 747,
+                left: 289,
+                top: 700,
                 child: Container(
                   width: 65,
                   height: 61,
@@ -92,8 +92,8 @@ class Iphone13148 extends StatelessWidget {
                 ),
               ),
               Positioned(
-                left: 380,
-                top: 759,
+                left: 303,
+                top: 710,
                 child: Container(
                   width: 37,
                   height: 37,

@@ -11,22 +11,22 @@ class Loading extends StatelessWidget {
       ),
       home: Scaffold(
         body: ListView(children: [
-          Iphone13145(),
+          LoadingPage(),
         ]),
       ),
     );
   }
 }
 
-class Iphone13145 extends StatelessWidget {
+class LoadingPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
       children: [
         Container(
-          width: 450,
-          height: 844,
-          padding: const EdgeInsets.only(top: 353, bottom: 310),
+          width: 390,
+          height: 800,
+          padding: const EdgeInsets.only(top: 353, bottom: 280),
           clipBehavior: Clip.antiAlias,
           decoration: BoxDecoration(color: Colors.black),
           child: Column(
