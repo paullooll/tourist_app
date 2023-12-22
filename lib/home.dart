@@ -127,7 +127,7 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
             ),
             Positioned(
-              left: 44,
+              left: 25,
               top: 240,
               child: Container(
                 width: MediaQuery.of(context).size.width,
@@ -186,7 +186,7 @@ class _MyHomePageState extends State<MyHomePage> {
               right: null,
               top: 15,
               child: Container(
-                width: 220,
+                width: 195,
                 height: 200,
                 decoration: const BoxDecoration(
                   image: DecorationImage(
@@ -241,7 +241,7 @@ class Spot extends StatelessWidget {
       children: [
         Container(
           width: 390,
-          height: 800,
+          height: 1000,
           clipBehavior: Clip.antiAlias,
           decoration: const BoxDecoration(color: Color(0xFF141414)),
           child: Stack(
@@ -267,8 +267,8 @@ class Spot extends StatelessWidget {
                 left: 0,
                 top: 447,
                 child: Container(
-                  width: 390,
-                  height: 403,
+                  width: 360,
+                  height: 440,
                   decoration: BoxDecoration(
                     image: DecorationImage(
                         filterQuality: FilterQuality.low,
@@ -281,7 +281,7 @@ class Spot extends StatelessWidget {
                 ),
               ),
               Positioned(
-                left: 34,
+                left: 20,
                 top: 459,
                 child: Text(
                   spotData['name'],
@@ -296,10 +296,10 @@ class Spot extends StatelessWidget {
               ),
               const SizedBox(width: 100),
               Positioned(
-                left: 34,
+                left: 20,
                 top: 549,
                 child: SizedBox(
-                  width: 350,
+                  width: 325,
                   height: 500,
                   child: Text(
                     spotData['description'],
@@ -314,7 +314,7 @@ class Spot extends StatelessWidget {
                 ),
               ),
               Positioned(
-                left: 34,
+                left: 20,
                 top: 502,
                 child: Text(
                   '${spotData['location']} , ${spotData['address']}',
